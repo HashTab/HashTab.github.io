@@ -8,16 +8,25 @@
 }
 body {
     background-color: #2a2b32;
+    color: #2a2b32;
 }
 canvas {
     height: 100vh;
-    /* z-index: -1000; */
     position: fixed;
     top: 0px;
 }
-
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 @import 'blocks/projects';
 @import 'blocks/titles';
 @import 'blocks/promo';
+@import 'blocks/card';
+@import 'blocks/nav';
+@import 'blocks/footer';
+@import 'blocks/about';
+@import 'blocks/skills';
 @import 'blocks/media';
 

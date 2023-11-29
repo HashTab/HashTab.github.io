@@ -1,0 +1,13 @@
+.about {
+    padding-top: 80px;
+    color: #fff;
+    min-height: 50vh;
+    &__descr {
+        padding: 10px;
+        position: relative;
+        border-radius: 20px;
+        z-index: 100;
+        background-color: #2a2b32;
+        font-size: 16px;
+    }
+}

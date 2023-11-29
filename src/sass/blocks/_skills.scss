@@ -1,0 +1,28 @@
+.skills {
+    padding-top: 80px;
+    color: #fff;
+    min-height: 50vh;
+    &__descr {
+        padding: 30px 10px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 150px);
+        justify-content: center;
+        gap: 20px;
+        z-index: 100;
+        font-size: 16px;
+    }
+    &__item {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #2a2b32;
+        border-radius: 20px;
+        i {
+            margin-bottom: 10px;
+            font-size: 72px;
+        }
+    }
+}

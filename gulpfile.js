@@ -10,7 +10,7 @@ gulp.task('server', function() {
 
     browserSync({
         server: {
-            baseDir: "HashTab.github.io"
+            baseDir: "docs"
         }
     });
 
@@ -21,12 +21,12 @@ gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
-        .pipe(gulp.dest("HashTab.github.io/css"))
+        .pipe(gulp.dest("docs/css"))
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest("HashTab.github.io/css"))
+        .pipe(gulp.dest("docs/css"))
         .pipe(browserSync.stream());
 });
 
@@ -42,31 +42,31 @@ gulp.task('watch', function() {
 gulp.task('html', function(){
     return gulp.src("src/*.html")
         .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(gulp.dest("HashTab.github.io/"));
+        .pipe(gulp.dest("docs/"));
 });
 
 gulp.task('scripts', function () {
     return gulp
         .src("src/js/**/*.js")
-        .pipe(gulp.dest("HashTab.github.io/js"))
+        .pipe(gulp.dest("docs/js"))
         .pipe(browserSync.stream());
 });
 
 gulp.task('fonts', function () {
     return gulp.src("src/fonts/**/*")
-        .pipe(gulp.dest("HashTab.github.io/fonts"))
+        .pipe(gulp.dest("docs/fonts"))
         .pipe(browserSync.stream());
 });
 
 gulp.task('icons', function () {
     return gulp.src("src/icons/**/*")
-        .pipe(gulp.dest("HashTab.github.io/icons"))
+        .pipe(gulp.dest("docs/icons"))
         .pipe(browserSync.stream());
 });
 
 gulp.task('images', function () {
     return gulp.src("src/img/**/*")
-        .pipe(gulp.dest("HashTab.github.io/img"))
+        .pipe(gulp.dest("docs/img"))
         .pipe(browserSync.stream());
 });
 
