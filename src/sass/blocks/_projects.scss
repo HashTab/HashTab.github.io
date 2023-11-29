@@ -1,0 +1,33 @@
+.projects {
+    padding-top: 120px;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__wrapper {
+        justify-content: center;
+        padding: 20px 0px 50px 0px;
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: 100px;
+        gap: 20px;
+    }
+    &__item {
+        border-radius: 20px;
+        z-index: 100;
+        box-shadow: 0px 0px 5px #efefef;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 36px;
+        text-align: center;
+        background-color: none;
+        transition: all 0.6s;
+        padding: 20px;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
