@@ -34,7 +34,6 @@ body::before {
 .game-container {
     width: 320px;
     height: 320px;
-    overflow: hidden;
 }
 .grid {
     display: grid;
@@ -50,7 +49,7 @@ body::before {
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
-    color: #000;
+    color: #fff;
 }
 
 .score-container {
@@ -63,52 +62,76 @@ body::before {
 }
 
 .cell[data-value="2"]{
-    background-color: #ffc0cb;
+    outline-offset: -4px;
+    outline: 4px solid #ffc0cb; 
+    color: #ffc0cb;
 }
 
 .cell[data-value="4"]{
-    background-color: #add8e6;
+    outline-offset: -4px;
+    outline: 4px solid #add8e6;
+    color: #add8e6;
 }
 
 .cell[data-value="8"]{
-    background-color: #98fb98;
+    outline-offset: -4px;
+    outline: 4px solid #98fb98;
+    color: #98fb98;
 }
 
 .cell[data-value="16"]{
-    background-color: #ffd700;
+    outline-offset: -4px;
+    outline: 4px solid #ffd700;
+    color: #ffd700;
 }
 
 .cell[data-value="32"]{
-    background-color: #ffa07a;
+    outline-offset: -4px;
+    outline: 4px solid #ffa07a;
+    color: #ffa07a;
 }
 
 .cell[data-value="64"]{
-    background-color: #87ceeb;
+    outline-offset: -4px;
+    outline: 4px solid #87ceeb;
+    color: #87ceeb;
 }
 
 .cell[data-value="128"]{
-    background-color: #ffff00;
+    outline-offset: -4px;
+    outline: 4px solid #ffff00;
+    color: #ffff00;
 }
 
 .cell[data-value="256"]{
-    background-color: #40e0d0;
+    outline-offset: -4px;
+    outline: 4px solid #40e0d0;
+    color: #40e0d0;
 }
 
 .cell[data-value="512"]{
-    background-color: #ff69b4;
+    outline-offset: -4px;
+    outline: 4px solid #ff69b4;
+    color: #ff69b4;
 }
 
 .cell[data-value="1024"]{
-    background-color: #7b68ee;
+    outline-offset: -4px;
+    outline: 4px solid #7b68ee;
+    color: #7b68ee;
 }
 
 .cell[data-value="2048"]{
-    background-color: #ff6347;
+    outline-offset: -4px;
+    outline: 4px solid #ff6347;
+    color: #ff6347;
 }
 
 .cell[data-value="4096"]{
-    background-color: #a9a9a9;
-}
+    outline-offset: -4px;
+    outline: 4px solid #a9a9a9;
+    color: #a9a9a9;
+} 
 
 #restart-btn{
     margin-top: 15px;
