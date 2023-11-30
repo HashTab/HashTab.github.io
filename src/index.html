@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"> -->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -71,7 +71,13 @@
             <section class="projects" id="projects">
                 <div class="container">
                     <h2 class="title">My projects:</h2>
-                    <div class="projects__wrapper">
+                    <div class="splide" style="z-index: 100;">
+                        <div class="splide__track">
+                              <ul class="splide__list" id="projectsContainer">
+                              </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="projects__wrapper">
                         <div class="projects__card">
                             <div class="card__title"><a href="projects/2048/">Weather App</a></div>
                             <div class="card__img">
@@ -203,7 +209,7 @@
                                 <a href="https://github.com/HashTab/HashTab.github.io/tree/master/docs/projects/taster">Github <i class='bx bxl-github'></i></a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
         </main>
@@ -215,8 +221,11 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://kit.fontawesome.com/60d4a604fd.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/projects.js"></script>
 </body>
 </html>

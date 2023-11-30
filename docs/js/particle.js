@@ -1,5 +1,4 @@
 particlesJS("background", {
-
     particles: {
         number: {
             value: 15, // Number of Particles (count)
@@ -74,5 +73,4 @@ particlesJS("background", {
 
     // Detect retina displays
     retina_detect: true,
-
 });

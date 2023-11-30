@@ -74,7 +74,3 @@ particlesJS("background", {
     // Detect retina displays
     retina_detect: true,
 });
-
-$(document).ready(function(){
-    $('.owl-carousel').owlCarousel();
-});

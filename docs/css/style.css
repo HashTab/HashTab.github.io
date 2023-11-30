@@ -24,14 +24,8 @@ canvas {
 }
 
 .projects {
-  padding-top: 80px;
-  min-height: 100vh;
-}
-.projects .container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  padding-top: 40px;
+  min-height: 70vh;
 }
 .projects__wrapper {
   width: 100%;
@@ -46,6 +40,23 @@ canvas {
   position: relative;
   z-index: 100;
   padding: 20px;
+  width: 340px;
+}
+.projects .splide {
+  margin-top: 50px;
+}
+.projects .splide__slide {
+  display: flex;
+  justify-content: center;
+}
+.projects .splide__arrow--prev {
+  left: -1em;
+}
+.projects .splide__arrow--next {
+  right: -1em;
+}
+.projects .splide__pagination {
+  margin-top: 20px;
 }
 
 .title {
@@ -120,6 +131,7 @@ canvas {
   margin-top: 15px;
 }
 .card__links {
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
@@ -245,11 +257,6 @@ canvas {
   }
   .title-maintitle {
     font-size: 56px;
-  }
-  .nav .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
   }
   .nav__social p {
     font-size: 32px;
