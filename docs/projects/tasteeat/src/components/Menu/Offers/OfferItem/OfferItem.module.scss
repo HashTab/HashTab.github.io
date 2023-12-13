@@ -8,11 +8,11 @@
   align-items: center;
   padding: 65px 40px 45px 40px;
   &.v1 {
-    background-image: url("./img/offers/bg_1.png");
+    background-image: url("/projects/tasteeat/dist/img/offers/bg_1.png");
     background-size: cover;
   }
   &.v2 {
-    background-image: url("./img/offers/bg_2.png");
+    background-image: url("/projects/tasteeat/dist/img/offers/bg_2.png");
     background-size: cover;
   }
   transition: all 0.3s ease;

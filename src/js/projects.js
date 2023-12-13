@@ -76,7 +76,7 @@ const projectsData = [
       { name: "Sass", iconClass: "bx bxl-sass" },
       { name: "JavaScript", iconClass: "bxl-javascript" },
     ],
-    liveDemoLink: "projects/tasteeat/dist/",
+    liveDemoLink: "projects/tasteeat/dist",
     githubLink:
       "https://github.com/HashTab/HashTab.github.io/tree/master/docs/projects/tasteeat",
   },

@@ -4,6 +4,8 @@ import {
   Route,
   createBrowserRouter,
   RouterProvider,
+  redirect,
+  Navigate,
 } from "react-router-dom";
 import ScrollToTop from "./utils/scrollToTop";
 import Header from "./components/Header/Header";
@@ -25,7 +27,7 @@ function App() {
           <ScrollToTop />
           <Header />
           <Routes>
-            <Route path="" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/blog" element={<Blog />} />

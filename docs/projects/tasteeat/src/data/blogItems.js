@@ -3,7 +3,7 @@ export const blog = [
     title: "The Legend of US Cuisine: The Story of Hungry People",
     description:
       "Capitalize on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality.",
-    img: "../img/blog/1.png",
+    img: "/projects/tasteeat/dist/img/blog/1.png",
     theme: "Delicious",
     date: new Date("March 19, 2022"),
     extendedDescription:
@@ -13,7 +13,7 @@ export const blog = [
     title: "The Most Popular Delicious Food of Mediterranean Cuisine",
     description:
       "Strategies on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality.",
-    img: "../img/blog/2.png",
+    img: "/projects/tasteeat/dist/img/blog/2.png",
     theme: "Cooking",
     date: new Date("March 19, 2022"),
     extendedDescription:
