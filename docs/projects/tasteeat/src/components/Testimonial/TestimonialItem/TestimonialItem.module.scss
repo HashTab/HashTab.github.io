@@ -1,0 +1,52 @@
+@import "../../../styles/variables";
+
+.Wrapper {
+  padding: 10px 40px;
+  margin: 0 10px 0 10px;
+  max-width: 545px;
+  background-color: #343942;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  cursor: pointer;
+  .Img {
+    position: relative;
+    img {
+      min-width: 125px;
+      max-height: 125px;
+      border-radius: 100%;
+    }
+    &::before {
+      content: url("../img/0.svg");
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid $main-gray;
+      width: 30px;
+      height: 30px;
+      background-color: $main-yellow;
+      border-radius: 100%;
+    }
+  }
+  .Info {
+    display: flex;
+    column-gap: 30px;
+    p {
+      color: $main-yellow;
+      font-family: "Josefin Sans";
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  .Divider {
+    height: 1px;
+    background-color: #797e89;
+  }
+  p {
+    font-family: "Cormorant Infant";
+    font-size: 24px;
+    line-height: 37.5px;
+    letter-spacing: 0.25px;
+  }
+}

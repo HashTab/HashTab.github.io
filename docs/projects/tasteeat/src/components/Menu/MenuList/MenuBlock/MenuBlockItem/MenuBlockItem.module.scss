@@ -1,0 +1,43 @@
+@import "../../../../../styles/variables";
+@import "../../../../../styles/mixins";
+
+.Wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 20px;
+  img {
+    min-width: 85px;
+    min-height: 85px;
+    border-radius: 100%;
+  }
+  .Right {
+    flex-grow: 1;
+    .Description {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      column-gap: 5px;
+    }
+    .Divider {
+      flex-grow: 1;
+      height: 1px;
+      background-color: $light-gray;
+    }
+    h2 {
+      font-size: 30px;
+      line-height: 42px;
+      @include mobile {
+        font-size: 26px;
+        line-height: 36px;
+      }
+    }
+    p {
+      @include mobile {
+        max-width: 150px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}

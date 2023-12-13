@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.Header {
+  background-color: $main-gray;
+  .Wrapper {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 50px 40px;
+    .Buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      @include mobile {
+        display: none;
+      }
+    }
+    @include tablet {
+      padding: 20px 20px;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+}

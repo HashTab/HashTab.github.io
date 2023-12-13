@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.NavBar {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  top: 70px;
+  left: 0;
+  background-color: $main-gray;
+  .Wrapper {
+    padding: 20px 20px;
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 20px;
+      column-gap: 20px;
+    }
+  }
+}

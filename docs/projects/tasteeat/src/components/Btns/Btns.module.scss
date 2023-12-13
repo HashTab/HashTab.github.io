@@ -1,0 +1,68 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.BtnCall,
+.BtnReservation,
+.BtnMenu,
+.BtnSeeAll,
+.BtnViewMore,
+.BtnFormSubmit {
+  color: $main-yellow;
+  display: inline-block;
+  border: 2px solid $main-yellow;
+  font-size: 22px;
+  line-height: 33px;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.BtnCall {
+  padding: 20px 57px;
+  color: $light;
+  @include tablet {
+    padding: 10px 30px;
+  }
+}
+
+.BtnFormSubmit {
+  padding: 16px 54px;
+  color: $main-gray;
+  border: none;
+  @include tablet {
+    padding: 16px 20px;
+  }
+}
+
+.BtnReservation {
+  padding: 20px 86px;
+  @include tablet {
+    padding: 10px 49px;
+  }
+}
+
+.BtnMenu,
+.BtnSeeAll,
+.BtnViewMore {
+  padding: 20px 57px;
+  @include tablet {
+    padding: 15px 30px;
+  }
+}
+
+.BtnSeeAll {
+  color: $main-gray;
+  border: 2px solid $main-gray;
+  background-color: transparent;
+}
+
+.BtnFormSubmit:hover,
+.BtnMenu:hover,
+.BtnCall:hover,
+.BtnSeeAll:hover,
+.BtnReservation:hover,
+.BtnViewMore:hover {
+  color: $main-gray;
+  background: $main-yellow;
+}

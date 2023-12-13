@@ -1,0 +1,15 @@
+.Title {
+  display: inline-block;
+  padding: 4px 4px 0px 4px;
+  margin: 20px 0;
+  text-align: center;
+  font-family: "Josefin Sans", serif;
+  text-transform: uppercase;
+  border-top: 1px solid #e1b168;
+  border-bottom: 1px solid #e1b168;
+  p {
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 3px;
+  }
+}

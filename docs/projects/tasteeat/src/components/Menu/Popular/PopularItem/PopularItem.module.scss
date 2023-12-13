@@ -1,0 +1,25 @@
+@import "../../../../styles/variables";
+
+.Wrapper {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  div:last-child {
+    border-top: 1px solid $main-gray;
+    padding-top: 15px;
+    margin-top: 10px;
+  }
+  .Title {
+    display: flex;
+    justify-content: space-between;
+  }
+  &:hover {
+    img {
+      transform: scale(1.01);
+      cursor: pointer;
+    }
+    .Title {
+      font-weight: 700;
+    }
+  }
+}

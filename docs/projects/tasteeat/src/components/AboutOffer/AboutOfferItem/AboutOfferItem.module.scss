@@ -1,0 +1,21 @@
+@import "../../../styles/variables";
+
+.Wrapper {
+  width: 215px;
+  height: 195px;
+  text-align: center;
+  border: 20px solid #323841;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    min-width: 65px;
+  }
+  h3 {
+    margin-top: 15px;
+    color: $light;
+    font-size: 25px;
+    line-height: 35px;
+  }
+}

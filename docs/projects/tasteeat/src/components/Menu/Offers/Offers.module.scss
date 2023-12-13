@@ -1,0 +1,33 @@
+@import "../../../styles/mixins";
+
+.Wrapper {
+  padding-bottom: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    text-align: center;
+  }
+  p:last-child {
+    text-align: left;
+  }
+  h2 {
+    margin-top: 12px;
+  }
+  .OfferItems {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 40px;
+    @include tablet {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+  @include tablet {
+    padding: 0px 20px 40px 20px;
+  }
+}

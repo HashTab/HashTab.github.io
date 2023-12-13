@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.Footer {
+  margin-top: auto;
+  background-color: $main-gray;
+  .Wrapper {
+    position: relative;
+    min-height: 250px;
+    padding: 150px 40px 25px 40px;
+    .SocialWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        color: $light;
+      }
+      p {
+        color: $light;
+      }
+      @include mobile {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+      }
+    }
+    .LogoWrapper {
+      p {
+        color: $light;
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+    .ContactWrapper {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    @include mobile {
+      padding: 40px 20px 20px 20px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.WelcomeInfo {
+  background: $main-light;
+  .Wrapper {
+    padding: 100px 40px 60px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 30px;
+    .Item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 20px;
+      .Icon {
+        color: $main-light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background: $main-gray;
+        svg {
+          font-size: 52px;
+        }
+      }
+      h2 {
+        font-size: 30px;
+        line-height: 39px;
+      }
+    }
+    @include tablet {
+      padding: 40px 20px 0 20px;
+    }
+  }
+}

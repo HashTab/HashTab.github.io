@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.WelcomeStory {
+  background: $main-light;
+  .Wrapper {
+    padding: 85px 40px 125px 40px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 45px;
+    .Right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      p {
+        max-width: 560px;
+      }
+      .Years {
+        margin: 25px 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 50px;
+        p {
+          max-width: 250px;
+        }
+      }
+      .Img {
+        margin-top: 20px;
+      }
+      @include mobile {
+        margin-top: 30px;
+      }
+    }
+    @include tablet {
+      padding: 40px 20px 40px 20px;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+}

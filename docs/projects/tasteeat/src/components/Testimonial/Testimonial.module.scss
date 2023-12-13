@@ -1,0 +1,18 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.Wrapper {
+  padding: 40px 40px 130px 40px;
+  h2,
+  p {
+    margin-top: 5px;
+    color: $light;
+  }
+  .Carousel {
+    position: relative;
+    padding: 80px 0px 80px 0px;
+  }
+  @include tablet {
+    padding: 20px 20px 40px 20px;
+  }
+}

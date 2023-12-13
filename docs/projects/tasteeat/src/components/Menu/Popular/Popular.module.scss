@@ -1,0 +1,34 @@
+@import "../../../styles/mixins";
+
+.Wrapper {
+  margin-top: 12px;
+  padding-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .Title {
+    text-align: center;
+    h2 {
+      margin-top: 12px;
+      text-transform: capitalize;
+    }
+    p {
+      max-width: 800px;
+    }
+  }
+}
+.Grid {
+  justify-content: center;
+  margin-bottom: 65px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 310px);
+  column-gap: 30px;
+  row-gap: 60px;
+  @include tablet {
+    grid-template-columns: repeat(2, 310px);
+  }
+  @include mobile {
+    grid-template-columns: repeat(1, 310px);
+  }
+}

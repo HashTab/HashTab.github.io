@@ -1,0 +1,11 @@
+.Wrapper {
+  width: 100%;
+  transition: all 0.3s ease;
+  transform-origin: top;
+  transform: scaleY(0);
+  height: 0;
+}
+.active {
+  transform: scaleY(1);
+  height: 100%;
+}

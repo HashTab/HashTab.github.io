@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.Wrapper {
+  padding: 140px 40px;
+  column-gap: 30px;
+  display: flex;
+  grid-auto-rows: 235px;
+  gap: 30px;
+  h2,
+  p {
+    color: $light;
+  }
+  .Info {
+    max-width: 430px;
+    @include tablet {
+      max-width: none;
+    }
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  .Grid {
+    flex: 1 1 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 255px);
+    gap: 30px;
+  }
+  @include tablet {
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+}

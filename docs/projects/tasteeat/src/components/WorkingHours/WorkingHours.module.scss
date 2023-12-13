@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.Wrapper {
+  text-align: right;
+  h2,
+  p {
+    color: $light;
+  }
+  span {
+    color: $main-yellow;
+  }
+  @include mobile {
+    text-align: left;
+  }
+}

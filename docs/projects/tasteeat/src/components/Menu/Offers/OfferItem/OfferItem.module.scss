@@ -1,0 +1,78 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+.Wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 65px 40px 45px 40px;
+  &.v1 {
+    background-image: url("./img/offers/bg_1.png");
+    background-size: cover;
+  }
+  &.v2 {
+    background-image: url("./img/offers/bg_2.png");
+    background-size: cover;
+  }
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05) perspective(200px);
+  }
+  .Left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 254px;
+    .Offer {
+      padding: 4px;
+      margin-top: 40px;
+      border-top: 1px solid $main-gray;
+      border-bottom: 1px solid $main-gray;
+      color: $main-gray;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+    .Price {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-position: 0;
+      background-size: cover;
+      width: 100%;
+      height: 100px;
+      max-width: 167px;
+      color: $main-gray;
+      &.v1 {
+        background-image: url("../img/offers/1.png");
+      }
+      &.v2 {
+        background-image: url("../img/offers/2.png");
+        p {
+          color: $light;
+        }
+      }
+      p:first-child {
+        position: absolute;
+        top: 0;
+        left: 30%;
+      }
+      p:last-child {
+        font-family: "Cormorant Infant", serif;
+        font-size: 60px;
+        line-height: 66px;
+      }
+    }
+    @include mobile {
+      max-width: none;
+    }
+  }
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+  }
+}
