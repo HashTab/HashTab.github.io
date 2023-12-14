@@ -1,32 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import "base/variables";
 
 * {
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    background-color: #2a2b32;
-    color: #2a2b32;
+  background-color: $main-color-light;
+  color: $main-color-light;
 }
 canvas {
-    height: 100vh;
-    position: fixed;
-    top: 0px;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-@import 'blocks/projects';
-@import 'blocks/titles';
-@import 'blocks/promo';
-@import 'blocks/card';
-@import 'blocks/nav';
-@import 'blocks/footer';
-@import 'blocks/about';
-@import 'blocks/skills';
-@import 'blocks/media';
-
+h1,
+a,
+h2,
+p,
+i {
+  color: $text-color-light;
+}
+i {
+  transition: color 0.3s ease;
+}
+a {
+  color: $text-color-light;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  &:hover {
+    i {
+      color: $link-color;
+    }
+    color: $link-color;
+  }
+}
+@import "blocks/projects";
+@import "blocks/titles";
+@import "blocks/promo";
+@import "blocks/card";
+@import "blocks/nav";
+@import "blocks/footer";
+@import "blocks/about";
+@import "blocks/skills";
+@import "blocks/media";

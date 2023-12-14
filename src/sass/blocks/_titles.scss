@@ -1,12 +1,14 @@
 .title {
-    font-size: 56px;
-    color: #fff;
-    &-maintitle {
-        font-size: 96px;
-    }
+  position: relative;
+  z-index: 100;
+  font-size: 56px;
+  &-maintitle {
+    font-size: 96px;
+  }
 }
 
 .subtitle {
-    font-size: 36px;
-    color:  #fff;
+  position: relative;
+  z-index: 100;
+  font-size: 36px;
 }
