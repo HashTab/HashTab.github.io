@@ -13,7 +13,7 @@ const Header = () => {
             <BtnReservation />
           </div>
           <div className="Logo">
-            <NavLink to={"/home"}>
+            <NavLink to={"/."}>
               <img src="./img/logo.png" alt="logo" />
             </NavLink>
           </div>

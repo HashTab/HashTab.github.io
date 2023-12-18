@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
           <div className={styles.LogoWrapper}>
             <div className="Logo">
-              <NavLink to="/home">
+              <NavLink to="/.">
                 <img src={"./img/logo.png"} alt="logo" />
               </NavLink>
               <p>

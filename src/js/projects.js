@@ -81,6 +81,18 @@ const projectsData = [
       "https://github.com/HashTab/HashTab.github.io/tree/master/docs/projects/tasteeat",
   },
   {
+    title: "Data Finance",
+    imgSrc: "projects/img/works/data_finance.png",
+    techStack: [
+      { name: "React", iconClass: "bxl-react" },
+      { name: "Tailwind", iconClass: "bx bxl-tailwind-css" },
+      { name: "JavaScript", iconClass: "bxl-javascript" },
+    ],
+    liveDemoLink: "projects/dataFinance/dist",
+    githubLink:
+      "https://github.com/HashTab/HashTab.github.io/tree/master/docs/projects/dataFinance",
+  },
+  {
     title: "Weather App",
     imgSrc: "projects/img/works/weather_app.png",
     techStack: [
