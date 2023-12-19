@@ -69,6 +69,18 @@ const projectsContainer = document.getElementById("projectsContainer");
 
 const projectsData = [
   {
+    title: "Hoobank",
+    imgSrc: "projects/img/works/hoobank.png",
+    techStack: [
+      { name: "React", iconClass: "bxl-react" },
+      { name: "Tailwind", iconClass: "bx bxl-tailwind-css" },
+      { name: "JavaScript", iconClass: "bxl-javascript" },
+    ],
+    liveDemoLink: "projects/hoobank/dist",
+    githubLink:
+      "https://github.com/HashTab/HashTab.github.io/tree/master/docs/projects/hoobank",
+  },
+  {
     title: "Tasteeat",
     imgSrc: "projects/img/works/tasteeat.png",
     techStack: [
