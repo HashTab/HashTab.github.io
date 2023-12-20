@@ -1,9 +1,18 @@
 import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
-const FeatureCard = ({ icon, title, content, index }) => (
-  <div
+const FeatureCard = ({ icon, title, content, index, delay, featureCtrl }) => (
+  <motion.div
+    initial={{ x: 800, opacity: 0 }}
+    animate={featureCtrl}
+    transition={{
+      duration: 1.2,
+      delay: delay,
+    }}
     className={`flex flex-row p-6 rounded-[20px] ${
       index !== features.length ? "mb-6" : "mb-0"
     } feature-card`}
@@ -21,29 +30,79 @@ const FeatureCard = ({ icon, title, content, index }) => (
         {content}
       </p>
     </div>
-  </div>
+  </motion.div>
 );
 
-const Business = () => (
-  <section id="features" className={layout.section}>
-    <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" /> we’ll handle the
-        money.
-      </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds of
-        credit cards on the market.
-      </p>
-      <Button styles="mt-10" />
-    </div>
-    <div className={`${layout.sectionImg} flex-col`}>
-      {features.map((feature, index) => (
-        <FeatureCard key={feature.id} {...feature} index={index} />
-      ))}
-    </div>
-  </section>
-);
+const Business = () => {
+  const featureCtrl = useAnimation();
+  const buttonCtrl = useAnimation();
+
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  });
+
+  const animationSequence = async () => {
+    await featureCtrl.start({ x: 0, opacity: 1 });
+    return await buttonCtrl.start({ scale: [1.5, 1], opacity: 1 });
+  };
+
+  useEffect(() => {
+    if (inView) {
+      animationSequence();
+    }
+  }, [inView]);
+
+  return (
+    <section id="features" className={layout.section}>
+      <motion.div ref={ref} className={layout.sectionInfo}>
+        <motion.h2
+          initial={{ x: -500, opacity: 0 }}
+          animate={featureCtrl}
+          transition={{
+            duration: 1.2,
+          }}
+          className={styles.heading2}
+        >
+          You do the business, <br className="sm:block hidden" /> we’ll handle
+          the money.
+        </motion.h2>
+        <motion.p
+          initial={{ x: -500, opacity: 0 }}
+          animate={featureCtrl}
+          transition={{
+            duration: 1.2,
+            delay: 0.5,
+          }}
+          className={`${styles.paragraph} max-w-[470px] mt-5`}
+        >
+          With the right credit card, you can improve your financial life by
+          building credit, earning rewards and saving money. But with hundreds
+          of credit cards on the market.
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={buttonCtrl}
+          transition={{
+            duration: 1.2,
+          }}
+        >
+          <Button styles="mt-10" />
+        </motion.div>
+      </motion.div>
+      <div className={`${layout.sectionImg} flex-col`}>
+        {features.map((feature, index) => (
+          <FeatureCard
+            key={feature.id}
+            {...feature}
+            index={index}
+            delay={0.5 + (index * 2) / 10}
+            featureCtrl={featureCtrl}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Business;
