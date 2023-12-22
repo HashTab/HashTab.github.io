@@ -69,6 +69,18 @@ const projectsContainer = document.getElementById("projectsContainer");
 
 const projectsData = [
   {
+    title: "Web-Store",
+    imgSrc: "projects/img/works/webstore.png",
+    techStack: [
+      { name: "React", iconClass: "bxl-react" },
+      { name: "Redux", iconClass: "bxl-redux" },
+      { name: "No-mobile", iconClass: "bx-devices" },
+    ],
+    liveDemoLink: "",
+    githubLink:
+      "https://github.com/HashTab/HashTab.github.io/tree/master/docs/projects/webstore",
+  },
+  {
     title: "Hoobank",
     imgSrc: "projects/img/works/hoobank.png",
     techStack: [
