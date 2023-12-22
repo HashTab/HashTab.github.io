@@ -76,7 +76,7 @@ const projectsData = [
       { name: "Redux", iconClass: "bxl-redux" },
       { name: "No-mobile", iconClass: "bx-devices" },
     ],
-    liveDemoLink: "",
+    liveDemoLink: "https://lighthearted-crisp-2971d5.netlify.app",
     githubLink:
       "https://github.com/HashTab/HashTab.github.io/tree/master/docs/projects/webstore",
   },
