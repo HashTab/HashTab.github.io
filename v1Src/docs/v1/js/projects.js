@@ -70,7 +70,7 @@ const projectsContainer = document.getElementById("projectsContainer");
 const projectsData = [
   {
     title: "Web-Store",
-    imgSrc: "../../projects/img/works/webstore.png",
+    imgSrc: "projects/img/works/webstore.png",
     techStack: [
       { name: "React", iconClass: "bxl-react" },
       { name: "Redux", iconClass: "bxl-redux" },
@@ -82,7 +82,7 @@ const projectsData = [
   },
   {
     title: "Hoobank",
-    imgSrc: "../../projects/img/works/hoobank.png",
+    imgSrc: "projects/img/works/hoobank.png",
     techStack: [
       { name: "React", iconClass: "bxl-react" },
       { name: "Tailwind", iconClass: "bx bxl-tailwind-css" },
@@ -94,7 +94,7 @@ const projectsData = [
   },
   {
     title: "Tasteeat",
-    imgSrc: "../../projects/img/works/tasteeat.png",
+    imgSrc: "projects/img/works/tasteeat.png",
     techStack: [
       { name: "React", iconClass: "bxl-react" },
       { name: "Sass", iconClass: "bx bxl-sass" },
@@ -106,7 +106,7 @@ const projectsData = [
   },
   {
     title: "Data Finance",
-    imgSrc: "../../projects/img/works/data_finance.png",
+    imgSrc: "projects/img/works/data_finance.png",
     techStack: [
       { name: "React", iconClass: "bxl-react" },
       { name: "Tailwind", iconClass: "bx bxl-tailwind-css" },
@@ -118,7 +118,7 @@ const projectsData = [
   },
   {
     title: "Weather App",
-    imgSrc: "../../projects/img/works/weather_app.png",
+    imgSrc: "projects/img/works/weather_app.png",
     techStack: [
       { name: "Html 5", iconClass: "bxl-html5" },
       { name: "Css 3", iconClass: "bxl-css3" },
@@ -130,7 +130,7 @@ const projectsData = [
   },
   {
     title: "2048",
-    imgSrc: "../../projects/img/works/2048.png",
+    imgSrc: "projects/img/works/2048.png",
     techStack: [
       { name: "Html 5", iconClass: "bxl-html5" },
       { name: "Css 3", iconClass: "bxl-css3" },
@@ -142,7 +142,7 @@ const projectsData = [
   },
   {
     title: "Tarla",
-    imgSrc: "../../projects/img/works/tarla.png",
+    imgSrc: "projects/img/works/tarla.png",
     techStack: [
       { name: "Html 5", iconClass: "bxl-html5" },
       { name: "JavaScript", iconClass: "bxl-javascript" },
@@ -154,7 +154,7 @@ const projectsData = [
   },
   {
     title: "Freedom",
-    imgSrc: "../../projects/img/works/freedom.png",
+    imgSrc: "projects/img/works/freedom.png",
     techStack: [
       { name: "Html 5", iconClass: "bxl-html5" },
       { name: "Sass", iconClass: "bx bxl-sass" },
@@ -165,7 +165,7 @@ const projectsData = [
   },
   {
     title: "Taster",
-    imgSrc: "../../projects/img/works/taster.png",
+    imgSrc: "projects/img/works/taster.png",
     techStack: [
       { name: "Html 5", iconClass: "bxl-html5" },
       { name: "Sass", iconClass: "bx bxl-sass" },
