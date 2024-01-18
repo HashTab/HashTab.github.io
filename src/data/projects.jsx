@@ -1,5 +1,13 @@
 export const PROJECTS = [
   {
+    title: "sashabryniuk.github.io",
+    description:
+      "Development of a portfolio website for a graphic designer using React, Tailwind, and Framer Motion.",
+    skillsTitle: ["React", "Tailwind", "Framer Motion"],
+    linkDemo: "https://sashabryniuk.github.io/",
+    linkGitHub: "https://github.com/sashabryniuk/sashabryniuk.github.io",
+  },
+  {
     title: "Web-Store",
     description:
       "Development of an online store with data retrieval from the store's fake API and state management implemented using Redux.",

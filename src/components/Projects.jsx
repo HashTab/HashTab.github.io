@@ -1,13 +1,12 @@
 import transition from "../utils/transitions";
-import Contacts from "./Contacts";
 import AnimatedBackground from "./AnimatedBackground";
 import styles from "../styles/styles";
 import { useState } from "react";
 import ProjectCard from "./PojectCard";
-import Versions from "./Versions";
 import Navbar from "./Navbar";
 
 const links = [
+  "sashabryniuk.github.io",
   "Web-Store",
   "HooBank",
   "TasteEat",
@@ -19,7 +18,9 @@ const links = [
 ];
 
 const Projects = () => {
-  const [activeComponent, setActiveComponent] = useState("Web-Store");
+  const [activeComponent, setActiveComponent] = useState(
+    "sashabryniuk.github.io"
+  );
   const [isVisible, setIsVisible] = useState(true);
 
   const handleItemClick = (componentName) => {
@@ -38,7 +39,7 @@ const Projects = () => {
           <ProjectCard isVisible={isVisible} projectTitle={activeComponent} />
         </div>
         <div className="md:w-[200px] p-4 relative z-30">
-          <ul className="flex md:flex-col flex-wrap gap-2">
+          <ul className="flex flex-col md:h-auto h-[200px] flex-wrap gap-2">
             {links.map((link, index) => {
               return (
                 <li
