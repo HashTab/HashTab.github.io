@@ -13,7 +13,8 @@ export const PROJECTS = [
       "Developing Conway's Game of Life using React, TypeScript, and canvas for rendering.",
     skillsTitle: ["React", "Type Script", "Tailwind"],
     linkDemo: "https://hashtab.github.io/projects/gameOfLife/dist",
-    linkGitHub: "https://github.com/HashTab/gameOfLife",
+    linkGitHub:
+      "https://github.com/HashTab/HashTab.github.io/tree/master/docs/projects/gameOfLife",
   },
   {
     title: "Web-Store",
