@@ -8,6 +8,14 @@ export const PROJECTS = [
     linkGitHub: "https://github.com/sashabryniuk/sashabryniuk.github.io",
   },
   {
+    title: "Game Of Life",
+    description:
+      "Developing Conway's Game of Life using React, TypeScript, and canvas for rendering.",
+    skillsTitle: ["React", "Type Script", "Tailwind"],
+    linkDemo: "https://hashtab.github.io/projects/gameOfLife/dist",
+    linkGitHub: "https://github.com/HashTab/gameOfLife",
+  },
+  {
     title: "Web-Store",
     description:
       "Development of an online store with data retrieval from the store's fake API and state management implemented using Redux.",

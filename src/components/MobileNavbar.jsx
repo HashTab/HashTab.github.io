@@ -77,6 +77,7 @@ const MobileNavbar = ({ LINKS }) => {
         {LINKS.map(({ title, link }, index) => {
           return (
             <motion.li
+              key={index}
               variants={variantsLi}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}

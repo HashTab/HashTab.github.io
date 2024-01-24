@@ -7,6 +7,7 @@ import Navbar from "./Navbar";
 
 const links = [
   "sashabryniuk.github.io",
+  "Game Of Life",
   "Web-Store",
   "HooBank",
   "TasteEat",

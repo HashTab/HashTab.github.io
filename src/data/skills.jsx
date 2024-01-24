@@ -9,6 +9,7 @@ import {
   TbBrandBootstrap,
   TbBrandFramer,
   TbBrandGit,
+  TbBrandTypescript,
 } from "react-icons/tb";
 import { DiGulp } from "react-icons/di";
 
@@ -24,4 +25,5 @@ export const SKILLS = [
   { title: "React", icon: <TbBrandReact /> },
   { title: "Redux", icon: <TbBrandRedux /> },
   { title: "Framer Motion", icon: <TbBrandFramer /> },
+  { title: "Type Script", icon: <TbBrandTypescript /> },
 ];
